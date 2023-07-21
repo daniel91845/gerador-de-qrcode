@@ -15,26 +15,6 @@ body {
     color: #fff;
 }
 
-/* Media queries for smartphones */
-@media screen and (max-width: 600px) {
-    body {
-        max-width: 100%;
-        padding: 10px;
-        height: auto;
-    }
-
-    #qr-code {
-        height: 250px;
-        width: 250px;
-    }
-
-    .sizes,
-    input[type="color"] {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
-
 input[type="color"] {
     border: none;
     width: 32.5%;
@@ -72,8 +52,8 @@ a {
 }
 
 #qr-code {
-    height: 500px;
-    width: 500px;
+    height: 340px;
+    width: 340px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,7 +110,7 @@ a {
 .action-container {
     display: flex;
     margin: 1rem 0;
-    position: relative;
+    position: relative
 }
 
 .switch {
@@ -140,6 +120,7 @@ a {
     right: 0;
     margin-left: 0.7rem;
 }
+
 
 .switch input {
     opacity: 0;
@@ -159,6 +140,7 @@ a {
     transition: .4s;
 }
 
+
 .slider:before {
     position: absolute;
     content: "";
@@ -171,7 +153,7 @@ a {
     transition: .4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: #2196F3;
 }
 
@@ -193,7 +175,7 @@ input:checked + .slider {
     transition: all 0.3s ease-in-out;
 }
 
-.slider:checked + .slider:after {
+.slider:checked+.slider:after {
     content: "Claro";
     color: #fff;
     right: 50%; /* Alteração */
